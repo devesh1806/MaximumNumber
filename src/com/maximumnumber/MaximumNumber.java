@@ -34,9 +34,13 @@ public class MaximumNumber <E extends Comparable<E>> {
 				}
 			}
 		}
-		System.out.println(max);
+		printMax( x , y , z , w , max );
 	}
 	
+	//UC5 - created printMax which is internally called in testMaximum
+	public static <E> void printMax( E x , E y , E z , E w , E max) {
+		System.out.println("The maximum of " + x + " , " + y + " , " + z + " , " + w + " is " + max + " .");
+	}
 	
 	
 	public static void main(String[] args) {
